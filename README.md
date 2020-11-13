@@ -1,7 +1,7 @@
-#UIIP REST API Project Work Frontend
+# UIIP REST API Project Work Frontend
 Questo applicativo nodejs è stato creato per offrire contenuto demo al project work
 
-###CONFIGURAZIONE
+### CONFIGURAZIONE
 Clona la repository in una cartella del pc, dopodiché apri la riga di comando (`terminale` su OSX o `cmd` su Windows, oppure il terminale di visual studio code) ed esguire:
 ```
 npm install
@@ -14,7 +14,7 @@ npm start
 
 Una volta avviato il server, visitare l'indirizzo web <a href="http://localhost:4000/" target="_blank">http://localhost:4000/</a> da cui poter estrapolare i contenuti interessati
 
-###ENDPOINTS DISPONIBILI
+### ENDPOINTS DISPONIBILI
 <table>
 <tr>
     <td><a href="http://localhost:4000/products" target="_blank">http://localhost:4000/products</a></td>
