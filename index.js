@@ -20,17 +20,19 @@ app.get("/products", (req, res) => {
     res.json(products);
 });
 
-app.get("/products/:id", (req, res) => {
-    const product = products.find(product => product.id == req.params.id );
-    res.json(product ? product : null);
+app.get("/products/outofstock", (req, res) => {
+    const product = products.filter(product => product.qty <= 0);
+    res.json(product);
 });
+
 app.get("/products/category/:category", (req, res) => {
     const product = products.filter(product => product.category.includes(req.params.category.trim()) );
     res.json(product);
 });
-app.get("/products/outofstock", (req, res) => {
-    const product = products.filter(product => product.qty <= 0);
-    res.json(product);
+
+app.get("/products/:id", (req, res) => {
+    const product = products.find(product => product.id == req.params.id );
+    res.json(product ? product : null);
 });
 
 app.get("/employees", (req, res) => {
